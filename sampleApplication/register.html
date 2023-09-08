@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta name="viewport" content="viewport initial-scale=1" />
+    <script src="./register.js"></script>
+    <style>
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+      /* Apply CSS to form labels */
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      /* Apply CSS to form input fields */
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      /* Apply CSS to the submit button */
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" onsubmit="submitForm(event)">
+      <lable>Name</lable>
+      <input type="text" id="name" required />
+      <br />
+      <lable>Email</lable>
+      <input type="email" id="email" required />
+      <br />
+      <lable>Location</lable>
+      <input type="text" id="name" required />
+      <br />
+      <input
+        type="text"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="XXX-XXX-XXXX"
+      />
+      <br />
+      <label>Password</label>
+      <input type="password" id="password" minlength="5" required />
+      <br />
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>

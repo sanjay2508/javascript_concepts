@@ -2,9 +2,9 @@ console.log("start");
 console.log(a);
 var a = 10;
 setTimeout(function () {
-    console.log("inside settimeout");
-}, 1);
+    console.log("1st settimeout");
+}, 10);
 setTimeout(function () {
-    console.log("inside 2nd settimeout");
+    console.log("2nd settimeout");
 });
 console.log("end");
