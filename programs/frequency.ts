@@ -12,16 +12,16 @@ function frequency(arr) {
     });
     console.log(dict);
 
-    let res = arr.reduce((allName, name) => {
-        if (name in allName) {
-            allName[name]++;
-        } else {
-            allName[name] = 1;
-        }
-        console.log(allName);
-        return allName;
-    }, {})
-    console.log(res);
+    // let res = arr.reduce((allName, name) => {
+    //     if (name in allName) {
+    //         allName[name]++;
+    //     } else {
+    //         allName[name] = 1;
+    //     }
+    //     console.log(allName);
+    //     return allName;
+    // }, {})
+    // console.log(res);
 }
 
 frequency(data);

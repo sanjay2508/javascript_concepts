@@ -21,6 +21,7 @@ function test() {
 console.log(x);
 console.log(y);
 console.log(z);
+// console.log(window.g);
 
 test();
 

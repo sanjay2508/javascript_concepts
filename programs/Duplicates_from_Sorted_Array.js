@@ -15,7 +15,7 @@ function removeDuplicates(nums) {
 }
 ;
 // console.log(removeDuplicates([1, 1, 2]));
-function removeElement(nums, val) {
+function removeElement(nums) {
     var set = new Set(nums);
     var i = 0;
     set.forEach(function (v) {
@@ -31,4 +31,4 @@ function removeElement(nums, val) {
     // return nums.length;
 }
 ;
-console.log(removeElement([3, 2, 2, 3], 3));
+console.log(removeDuplicates([3, 2, 2, 3]));
